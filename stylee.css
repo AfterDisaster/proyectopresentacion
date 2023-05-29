@@ -1,0 +1,244 @@
+:root {
+    --green-color: #1D957F;
+    --blue-color: #4285F4;
+    --text-color: #616161;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1,
+h2 {
+    font-size: 4.4rem;
+    font-weight: 700;
+    line-height: 5.5rem;
+}
+
+strong {
+    color: var(--green-color);
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+button,
+a {
+    font-family: 'Rubik', sans-serif;
+}
+
+figure {
+    margin: auto;
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    inline-size: 130px;
+    border-radius: 5px;
+    border: none;
+    padding: 15px;
+    background-color: var(--green-color);
+    color: white;
+    margin-block: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.wrapper {
+    max-inline-size: 1350px;
+    margin: 0 auto;
+}
+
+/* Header Section */
+.icon-menu {
+    position: absolute;
+    right: 0;
+}
+
+.icon-menu:hover {
+    cursor: pointer;
+}
+
+.icon-menu img {
+    inline-size: 30px;
+    block-size: 30px;
+    margin-inline-end: 10px;
+    padding: 5px;
+}
+
+.header-image--container {
+    inline-size: 140px;
+    margin: 0;
+}
+
+.menu {
+    position: fixed;
+    background-color: var(--green-color);
+    color: white;
+    z-index: 1;
+    top: 0;
+    right: -65vw;
+    width: 65vw;
+    height: inherit;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s;
+}
+.sub-menu {
+    font-size: 1.6rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    height: 50%;
+    width: 90%;
+}
+
+.sub-menu li:hover {
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.menu.is-active {
+    right: 0;
+}
+
+
+/* Main section */
+section {
+    inline-size: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero-buttons--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-video--button {
+    background-color: transparent;
+    color: black;
+}
+
+.hero-video--button span {
+    display: inline-block;
+    inline-size: 20px;
+    block-size: 20px;
+    margin-inline-end: 5px;
+    background-image: url(../assets/icons/play-icon.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.hero-image--container {
+    inline-size: 100%;
+    max-inline-size: 450px;
+}
+
+/* Section about App */
+.about-image--container {
+    width: 250px;
+}
+
+.section-about--content {
+    text-align: center;
+}
+
+/* Stats Section */
+section:nth-of-type(3) {
+    inline-size: 100%;
+    padding: 20px 3px;
+    background-color: #FAFBFD;
+}
+
+.stats-content {
+    margin: 15px auto;
+    padding: 15px 28px;
+    border-radius: 14px;
+    box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+
+.stats-content strong {
+    font-size: 3.6rem;
+}
+
+.stats-content span {
+    font-weight: 700;
+    letter-spacing: .6rem;
+}
+
+.stats-description--container {
+    text-align: center;
+}
+
+.stats-description--container button {
+    inline-size: 150px;
+}
+
+.stats-image--container {
+    inline-size: 250px;
+}
+
+/* Cards Section */
+section:last-of-type {
+    text-align: center;
+}
+
+.card {
+    display: inline-block;
+    width: 80%;
+    margin-block: 15px;
+    padding: 30px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: 0 -1px 8px 3px rgba(0, 0, 0, 0.2 );
+}
+
+.card figure {
+    inline-size: 50px;
+    margin-block-end: 20px;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+/* Footer Section */
+.footer-content figure {
+    inline-size: 180px;
+    margin-block-end: 10px;
+}
+
+.footer-content figure:hover {
+    cursor: pointer;
+}
+
+.footer-content figure:last-child {
+    inline-size: 195px;
+}

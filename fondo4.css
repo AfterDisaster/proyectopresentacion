@@ -1,0 +1,9 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background: url(mercado_libre_logo.jpg_242310155.webp);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
